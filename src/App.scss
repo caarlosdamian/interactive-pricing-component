@@ -2,15 +2,32 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Manrope";
+  font-style: normal;
 }
 main {
   background: #f9faff;
   height: 100vh;
   position: relative;
+  padding-top: 67px;
+  padding-left: 24px;
+  padding-right: 24px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 54px;
+  @media (max-width: 375px) {
+    padding-top: 50px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 
   .background-photo {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: auto;
   }
 }
