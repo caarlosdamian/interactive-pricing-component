@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  background: #f9faff;
+  height: 100vh;
+  position: relative;
+
+  .background-photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
