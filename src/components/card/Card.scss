@@ -6,4 +6,193 @@
   height: 397px;
   padding: 32px 48px;
   z-index: 2;
+  position: relative;
+  .top-card-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .top-card-left-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      .span-card-left-title {
+        font-family: "Manrope";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #848ead;
+      }
+    }
+    .top-card-right-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      .span-card-right-title {
+        font-family: "Manrope";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 55px;
+        text-align: right;
+        letter-spacing: -1px;
+        color: #293356;
+      }
+      .span-card-right-subtitle {
+        font-family: "Manrope";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        color: #848ead;
+      }
+    }
+  }
+  .top-middle-container {
+    margin-top: 24px;
+    .scroll-bar {
+      width: 444px;
+      height: 8px;
+      -webkit-appearance: none;
+      background: #ecf0fb;
+      outline: none;
+      border-radius: 15px;
+      overflow: hidden;
+      //   box-shadow: inset 0 0 5px rgb(187, 187, 187);
+      &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #10d8c4;
+        box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+        background-image: url("../../images/icon-slider.svg");
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        box-shadow: -407px 0 0 400px #a4f3eb;
+      }
+    }
+  }
+  .card-middle-top-container {
+    margin-top: 51px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    .middle-top-label {
+      font-family: "Manrope";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 10px;
+      line-height: 14px;
+      text-align: center;
+      color: #ff8d68;
+      background: #feede8;
+      border-radius: 9.5px;
+      padding: 2px 6px;
+    }
+    .middle-top-text {
+      font-family: "Manrope";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 16px;
+      text-align: center;
+      color: #848ead;
+    }
+    .toggle-component {
+      background: #cfd8ef;
+      border-radius: 15px;
+      width: 43px;
+      height: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 4px;
+      cursor: pointer;
+      .circle-white {
+        background: #ffffff;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        transition: all 0.5s ease;
+      }
+      &.active {
+        justify-content: flex-end;
+      }
+      &:hover {
+        background: #7aeadf;
+      }
+    }
+  }
+  .line {
+    background: #ecf0fb;
+    margin-top: 40px;
+    width: 540px;
+    position: absolute;
+    left: 0;
+    border: 0.5px solid #ecf0fb;
+  }
+  .card-bottom-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+    .bottom-left-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      .bottom-items-wrapper {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        .bottom-wrapper-item-container {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 16px;
+
+          .bottom-text {
+            font-family: "Manrope";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 16px;
+
+            color: #848ead;
+          }
+        }
+      }
+    }
+    .bottom-right-container {
+      .button-right {
+        background: #293356;
+        border-radius: 20.5px;
+        padding: 12px;
+        font-family: "Manrope";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        color: #becdff;
+        border: none;
+        cursor: pointer;
+        width: 170px;
+        &:hover{
+            color: white;
+        }
+      }
+    }
+  }
 }
