@@ -12,11 +12,11 @@ main {
   padding-top: 67px;
   padding-left: 24px;
   padding-right: 24px;
-  // overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
+  overflow: hidden;
   gap: 54px;
   @media (max-width: 375px) {
     padding-top: 50px;

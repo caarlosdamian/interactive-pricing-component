@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { bottomItems } from "../../utils";
-import check from '../../images/icon-check.svg'
+import check from "../../images/icon-check.svg";
 import "./Card.scss";
 
 export const Card = () => {
@@ -12,6 +12,13 @@ export const Card = () => {
           <div className="span-card-left-title">100K</div>
           <div className="span-card-left-title">PAGEVIEWS</div>
         </div>
+        <input
+          type="range"
+          name=""
+          id=""
+          className="scroll-bar-mobile"
+          onChange={(e) => console.log(e)}
+        />
         <div className="top-card-right-content">
           <div className="span-card-right-title">$16.00</div>
           <div className="span-card-right-subtitle">/ month</div>
@@ -50,7 +57,7 @@ export const Card = () => {
           </div>
         </div>
         <div className="bottom-right-container">
-            <button className="button-right">Start my trial</button>
+          <button className="button-right">Start my trial</button>
         </div>
       </div>
     </div>
